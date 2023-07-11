@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+/Assignment 1/.vs/Assignment 1
+/Assignment 1/Assignment 1/x64/Debug
+/Assignment 1/Assignment 1/Assignment 1.vcxproj.user
+/Assignment 1/Assignment 1/Assignment 1.vcxproj.filters
+/Assignment 1/Assignment 1/Assignment 1.vcxproj
+/Assignment 1/x64/Debug
+*.sln
