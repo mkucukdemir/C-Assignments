@@ -23,6 +23,9 @@ namespace memory_allocation_in_c {
         p1 = NULL;  // good practise to prevent from crashes
 
         free(p1);   // since p1 is set as NULL, no crash
+
+        free(p2);
+        p2 = NULL;
         return 0;
     }
 }
