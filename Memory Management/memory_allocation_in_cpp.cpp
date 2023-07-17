@@ -32,6 +32,26 @@ namespace memory_allocation_in_cpp {
         arrp == nullptr;
 
         //...
+        // Two dimensional array
+        int* r1 = new int[3];
+        int* r2 = new int[3];
+
+        int** m = new int* [2];
+        m[0] = r1;
+        m[1] = r2;
+
+        m[0][0] = 100;
+        m[0][1] = 101;
+        m[0][2] = 102;
+        m[1][0] = 200;
+        m[1][1] = 201;
+        m[1][2] = 202;
+
+        delete[]r1;     // delete []m[0]
+        delete[]r2;     // delete []m[1]
+
+        delete[]m;
+
         return 0;
     }
 }
