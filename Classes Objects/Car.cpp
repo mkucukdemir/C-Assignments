@@ -2,16 +2,11 @@
 #include <iostream>
 
 Car::Car() {
-	this->fuel = 0.0f;
-	this->speed = 0.0f;
-	this->passengers = 0;
 	std::cout << "Car()" << std::endl;
 }
 
 Car::Car(float amount) {
 	this->fuel = amount;
-	this->speed = 0.0f;
-	this->passengers = 0;
 	std::cout << "Car(float amount) where amount: " << amount << std::endl;
 }
 

@@ -3,9 +3,9 @@
 
 class Car {
 private:
-	float fuel;
-	float speed;
-	int passengers;
+	float fuel{0.0f};
+	float speed{0.0f};
+	int passengers{0};
 
 public:
 	Car();
