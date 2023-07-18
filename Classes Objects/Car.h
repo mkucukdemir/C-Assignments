@@ -6,6 +6,7 @@ private:
 	float fuel{0.0f};
 	float speed{0.0f};
 	int passengers{0};
+	static int totalCount;
 
 public:
 	Car();
@@ -16,6 +17,7 @@ public:
 	void Brake();
 	void AddPassengers(int count);
 	void Dashboard();
+	static void ShowCount();
 };
 
 #endif

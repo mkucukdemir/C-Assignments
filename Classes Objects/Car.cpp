@@ -1,16 +1,21 @@
 #include "Car.h"
 #include <iostream>
 
+int Car::totalCount{0};
+
 Car::Car() {
+	++totalCount;
 	std::cout << "Car()" << std::endl;
 }
 
 Car::Car(float amount) {
+	++totalCount;
 	this->fuel = amount;
 	std::cout << "Car(float amount) where amount: " << amount << std::endl;
 }
 
 Car::~Car() {
+	--totalCount;
 	std::cout << "~Car()" << std::endl;
 }
 
@@ -37,4 +42,8 @@ void Car::Dashboard() {
 	std::cout << "Speed: " << this->speed << std::endl;
 	std::cout << "Passengers: " << this->passengers << std::endl;
 	std::cout << "--------------------------------" << std::endl;
+}
+
+void Car::ShowCount() {
+	std::cout << "Total Count: " << totalCount << std::endl;
 }
