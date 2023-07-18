@@ -36,7 +36,8 @@ void Car::AddPassengers(int count) {
 	this->passengers += count;
 }
 
-void Car::Dashboard() {
+// Dashboard do not changes value of the any member
+void Car::Dashboard() const {
 	std::cout << "--------------------------------" << std::endl;
 	std::cout << "Fuel: " << this->fuel << std::endl;
 	std::cout << "Speed: " << this->speed << std::endl;

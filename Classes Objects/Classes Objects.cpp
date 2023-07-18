@@ -28,7 +28,7 @@ int main()
 
     Car::ShowCount();
 
-    Car newCar(0);
+    const Car newCar(0);
     Car::ShowCount();
 
     return 0;
