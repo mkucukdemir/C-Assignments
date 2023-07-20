@@ -1,5 +1,16 @@
 #include <iostream>
 #include "Car.h"
+#include "Integer.h"
+
+// Copy constructor is invoked to pass the value as argument
+void PassByValue(Integer a) {
+    // smt...
+}
+
+// Copy constructor is invoked to return an Integer
+Integer ReturnByValue(int a) {
+    return Integer(a);
+}
 
 int main()
 {
@@ -30,6 +41,11 @@ int main()
 
     const Car newCar(0);
     Car::ShowCount();
+    //
+    Integer i(9);
+    std::cout << "i: " << i.GetValue() << std::endl;
+    // Copy constructor is invoked to create a copy
+    Integer j(i);
 
     return 0;
     
