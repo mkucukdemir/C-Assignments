@@ -4,6 +4,7 @@ class Integer {
 public:
 	Integer();
 	Integer(int value);
+	Integer(const Integer &value);
 	int GetValue() const;
 	void SetValue(int value);
 };

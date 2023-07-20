@@ -10,6 +10,11 @@ Integer::Integer(int value)
 	pInt = new int{value};
 }
 
+Integer::Integer(const Integer& value)
+{
+	pInt = new int{*value.pInt};
+}
+
 int Integer::GetValue() const
 {
 	return *pInt;
