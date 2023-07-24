@@ -10,9 +10,12 @@
 class Integer {
 	int *pInt;
 public:
-	Integer();
+	//Integer();			// Cannot be synthesized
+	Integer() = default;	// Request default implementation of default constrcutor
+	// Default keyword is used for the functions that the compiler can synthesize
 	Integer(int value);
 	Integer(const Integer &value);
 	int GetValue() const;
 	void SetValue(int value);
+	void SetValue(float value) = delete;	// use delete keyword in order to prevent from being defined with float argument
 };

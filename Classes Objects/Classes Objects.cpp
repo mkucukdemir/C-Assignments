@@ -47,6 +47,10 @@ int main()
     // Copy constructor is invoked to create a copy
     Integer j(i);
 
+    Integer k;
+    i.SetValue(17);
+    // i.SetValue(17.5f);  // attempting to reference a deleted function
+
     return 0;
     
 }

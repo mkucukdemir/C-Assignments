@@ -1,9 +1,9 @@
 #include "Integer.h"
 
-Integer::Integer()
-{
-	pInt = new int{ 0 };
-}
+//Integer::Integer()
+//{
+//	pInt = new int{ 0 };
+//}
 
 Integer::Integer(int value)
 {
