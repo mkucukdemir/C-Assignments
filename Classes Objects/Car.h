@@ -11,6 +11,7 @@ private:
 public:
 	Car();
 	Car(float amount);
+	Car(float amount, int passengers);
 	~Car();
 	void FillFuel(float amout);
 	void Accelerate();

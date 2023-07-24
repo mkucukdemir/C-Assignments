@@ -3,15 +3,19 @@
 
 int Car::totalCount{0};
 
-Car::Car() {
-	++totalCount;
+Car::Car():Car(0.0f) {
 	std::cout << "Car()" << std::endl;
 }
 
-Car::Car(float amount) {
+Car::Car(float amount):Car(amount,0) {
+	std::cout << "Car(float amount) where amount: " << amount << std::endl;
+}
+
+Car::Car(float amount, int passengers) {
 	++totalCount;
 	this->fuel = amount;
-	std::cout << "Car(float amount) where amount: " << amount << std::endl;
+	this->passengers = passengers;
+	std::cout << "Car(float amount, int passengers) where amount: " << amount << ", passengers: " << passengers << std::endl;
 }
 
 Car::~Car() {
