@@ -30,29 +30,10 @@
 *.exe
 *.out
 *.app
-/Assignment 1/.vs/Assignment 1
-/Assignment 1/Assignment 1/x64/Debug
-/Assignment 1/Assignment 1/Assignment 1.vcxproj.user
-/Assignment 1/Assignment 1/Assignment 1.vcxproj.filters
-/Assignment 1/Assignment 1/Assignment 1.vcxproj
-/Assignment 1/x64/Debug
 *.sln
-/Assignment 3
-/Assignment 2
-/Memory Management/x64/Debug
-/Memory Management/.vs/Memory Management
-/Memory Management/Memory Management.vcxproj.user
-/Memory Management/Memory Management.vcxproj.filters
-/Memory Management/Memory Management.vcxproj
-/Assignment 2/.vs/Assignment 2
-/Assignment 2/x64/Debug
-/Assignment 2
-/Assignment 3/x64/Debug
-/Assignment 3/.vs/Assignment 3
-/Assignment 3/Assignment 3.vcxproj.user
-/Assignment 3/Assignment 3.vcxproj.filters
-/Assignment 3/Assignment 3.vcxproj
-/Assignment 2/Assignment 2.vcxproj.user
-/Assignment 2/Assignment 2.vcxproj.filters
-/Assignment 2/Assignment 2.vcxproj
-/Assignment 2/x64/Debug
+/*/x64/Debug
+/*/*.vcxproj.user
+/*/*.vcxproj.filters
+/*/*.vcxproj
+/*/.vs/*
+/Assignment 1/Assignment 1
